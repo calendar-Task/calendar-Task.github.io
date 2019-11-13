@@ -6,34 +6,48 @@
 	<title>Toxin</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="https://cdn.jsdelivr.net/npm/vue@2.6.0"></script>
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+<!-- 	FOR DELETE    -->	
+ <div class="fordelete" style="position: absolute; width: 100%; opacity: .3; z-index: -5;">
+		<img src="delete/2.png" alt="" style="width: 100%;">
+	</div>
+
+
 	<div id="app">
 		
 	
 	<!-- /header -->
-	<header class="header">
+	<header >
+		<div class="header">
+			
+		
 		<div class="header__logo">
-			<div class="header__img" >
-				 <img :src="src" />
-			</div>
-			<div class="header__site-name">
-				
-			</div>
-
+				 <img :src="srcIcon" alt="icon" >
 		</div>
 			<div class="header__menu">
 				<ul class="menu">
-					<li class="menu__item" v-for="item in items">
+					<li class="menu__item " v-for="item in items">
 						<a :href="item.href" :class="item.class">{{item.title}}</a>
 					</li>
 				</ul>
 				
 			</div>
+			<div class="header__button">
+				
+					
+						<button class="header__signIn"><div class="gradient-box">войти</div></button>
+					
+				
+				<button class="header__signUp">зарегистрироваться</button>
+			
+			</div>
+		</div>
 	</header>
 		<main class="main">
-			
+	
 		</main>
 
 

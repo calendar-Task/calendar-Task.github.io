@@ -54,30 +54,66 @@ button {
   color: inherit;
   background-color: transparent;
 }
+@font-face{
 
+font-family: 'Montserrat';
+
+src: url('Montserrat/Montserrat-Regular.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+
+
+}
+@font-face{
+
+font-family: 'Montserrat';
+
+src: url('Montserrat/Montserrat-Bold.ttf') format('truetype');
+font-weight: bold;
+font-style: normal;
+
+}
+@font-face{
+
+font-family: 'Montserrat';
+
+src: url('Montserrat/Montserrat-Italic.ttf') format('truetype');
+font-weight: normal;
+font-style: italic;
+
+}
 body {
   height: 100vh;
+
+ font-family: 'Montserrat', sans-serif;
+
+
+}
+a{
+	text-decoration: none;
+}
+a{
+	&.dropdown{
+		background-image: url(icon/expand_more.png);
+		background-repeat: no-repeat;
+		background-position: right;
+	}
 }
 
-a {
-  text-decoration: none;
+.menu{
+	display: flex;
+	flex-wrap:wrap;
+	justify-content: space-around;
+	a{
+		color: black;
+	}
 }
 
-a.dropdown {
-  background-image: url(icon/expand_more.png);
-  background-repeat: no-repeat;
-  background-position: right;
-}
+@import 'bigScreen';
 
-.menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-.menu a {
-  color: black;
-}
+
+
+
+
+
+
